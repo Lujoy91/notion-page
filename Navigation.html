@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Advent Pro', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #ece5f0;
+		}
+
+		.border {
+			border: 1px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #4d87fa;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="PLAVE Daum" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-mug-saucer" style="color: #fa500c;"></i> PLAVE Daum</a>
+		<a id="Youtube" onclick="navigate(this.id)" href="#"> <i class="fa-brands fa-youtube" style="color: #fb0442;"></i> Youtube</a>
+		<a id="Instagram" onclick="navigate(this.id)" href="#"> <i class="fa-brands fa-instagram" style="color: #6602bd;"></i> Instagram</a>
+		<a id="Twitter(X)" onclick="navigate(this.id)" href="#"> <i class="fa-brands fa-square-x-twitter"></i> Twitter(X)</a>
+		<a id="Facebook" onclick="navigate(this.id)" href="#"> <i class="fa-brands fa-square-facebook"  style="color: #0d53de;"></i> Facebook</a>
+		<a id="Tiktok" onclick="navigate(this.id)" href="#"> <i class="fa-brands fa-tiktok" style="color: #2fd46e;"></i> Tiktok</a>
+		<a id="VLAST shop" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-store"  style="color: #f23597;"></i> VLAST shop</a>
+		
+
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'PLAVE Daum')
+				window.open("https://cafe.daum.net/plave", '_blank').focus();
+			else if (id == "Youtube")
+				window.open("https://www.youtube.com/@plave_official", '_blank').focus();
+			else if (id == "Instagram")
+				window.open("https://www.instagram.com/plave_official/", '_blank').focus();
+			else if (id == "Twitter(X)")
+				window.open("https://twitter.com/plave_official", '_blank').focus();
+			else if (id == "Facebook")
+				window.open("https://www.facebook.com/PLAVE-%ED%94%8C%EB%A0%88%EC%9D%B4%EB%B8%8C-101912562569633", '_blank').focus();
+			else if (id == "Tiktok")
+				window.open("https://www.tiktok.com/@plave_official", '_blank').focus();
+			else if (id == "VLAST shop")
+				window.open("https://www.vlastshop.com/", '_blank').focus();
+			
+
+		}
+	</script>
+
+
+</body>
+
+</html>
